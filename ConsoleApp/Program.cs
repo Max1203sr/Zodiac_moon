@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp
+
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello");
-        }
+        Console.WriteLine("Enter date in format DD.MM.YYYY");
+        string input = Console.ReadLine();
+        Moon moon = new Moon(input);
+        moon.Output();
     }
 }
