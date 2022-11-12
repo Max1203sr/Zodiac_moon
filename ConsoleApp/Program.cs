@@ -10,7 +10,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            Console.WriteLine("enter birth date in format DD.MM");
+            string input = Console.ReadLine();
+            Zodiac zodiac = new Zodiac(input);
+            zodiac.Print();
         }
     }
 }
